@@ -1,0 +1,34 @@
+1. ¿Para qué se utiliza la función gets()? Sintaxis: gets (nombre_variable);
+Lee desde el standard input el texto ingresado para después guardarlo en memoria a la variable que recibe como argumento.
+2. ¿Para qué se utiliza la función puts()? Sintaxis puts (nombre_variable);
+sirve para mostrar en pantalla un string o char.
+3. ¿Es posible realizar la impresión de una cadena de texto a través de la función printf()?
+sí, para eso se utiliza el operador %s.
+4. ¿Se puede utilizar la función scanf() para capturar el texto ingresado? ¿Posee alguna limitación? ¡Recuerden los distintos especificadores con los que trabaja la función!
+Sí, se utiliza el operador %s. la única limitación sería que no toma un espacio en blanco como parte del string.
+5. ¿Qué devuelve la función strlen()? ¡Recuerden que las funciones para manejo de caracteres perteneces a la bibloteca <string.h>!
+Devuelve la cantidad de caracteres que contiene el string como int.
+6. De acuerdo al siguiente código: {
+char nombre[100];
+char anio[10];
+printf("Inrese su nombre:\n");
+gets_s (nombre);
+printf("Inrese su año de nacimiento:\n");
+gets_s (anio);
+int dato= atoi(anio);
+int diferencia=2012-dato;
+printf("%s tiene %d años! \n",nombre,diferencia);
+system("pause");
+} ¿Qué podemos decir que realiza la función atoi()?
+Convierte la variable "anio" a un entero.
+7. ¿Qué Sucede si en el ejemplo anterior ingresamos un valor no valido?
+Devuelve un 0.
+8. ¿Qué devuelve la función strcmp ()? Esta función, a diferencia de las anteriores recibe como argumento dos cadenas.
+Compara las dos cadenas de texto tomando la longitud de cada una. Sí la primera es mayor, devuelve un número positivo, si la segunda es mayor devuelve un número negativo y si las dos son iguales devuelve 0.
+9. Diseña un programa que reciba una cadena de caracteres y la invierte.
+10.Crear un programa que compruebe si un texto ingresado por teclado es o no un palíndromo.
+11.Crear un programa que invierta las letras de un texto, es decir, si son mayúsculas muestras minúsculas. ¡Cuidado con los espacios y signos de puntuación!
+12.Se ingresan apellido de 3 alumnos junto con notas de 5 materias. Determinar cuál es el promedio de cada uno de ellos, el promedio del curso y realizar una función que verifique que la primera letra del apellido sea mayúscula, de no ser así, se debe realizar el cambio.
+13. Se ingresa un texto por teclado, se desea saber la cantidad de veces que se repite cada vocal.
+14. Se ingresa nombre, fecha de ingreso y sueldo de tres empleados. Mostrar el nombre y el sueldo del empleado más antiguo.
+15. Se ingresa el Nombre y la fecha de nacimiento de 3 personas. Por medio de una función se debe realizar la carga de la fecha verificando que los valores se encuentren dentro de lo permitido y que no se ingrese un valor posterior a la fecha actual. Terminada la carga permitir la modificación de la fecha a partir del ingreso del nombre. Mostrar los datos ingresados ordenados por edad. Realizar una función que permita calcular la edad a partir de la fecha de nacimiento.
